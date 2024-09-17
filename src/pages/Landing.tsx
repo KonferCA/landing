@@ -1,8 +1,12 @@
+import { Header, About, Contact } from '@components'
+
 const Landing = () => {
     return (
-        <h1 className="text-3xl font-bold underline">
-            Landing
-        </h1>
+        <div className="h-screen flex flex-col">
+            <Header />
+            <About />
+            <Contact />
+        </div>
     );
 };
 
