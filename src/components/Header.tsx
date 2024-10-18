@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <header className="w-full text-white p-4 pt-10 flex items-center justify-between">
+        <header className="fixed top-0 left-0 w-full text-white p-4 pt-10 flex items-center justify-between z-50">
             <div className="flex items-center pl-12">
                 <img
                     src="/konfer_logo.svg"
