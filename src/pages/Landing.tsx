@@ -2,8 +2,10 @@ import { Header, Hero, Contact } from '@components'
 
 const Landing = () => {
     return (
-        <main>
+        <main className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
+            <Header />
             <Hero />
+            <About />
             <Contact />
         </main>
     );
