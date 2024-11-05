@@ -11,7 +11,7 @@ import {
 const Partners = () => {
     return (
         <section>
-            <h1 className="text-4xl lg:text-5xl font-bold text-center">
+            <h1 className="text-4xl mb-6 lg:text-5xl lg:mb-0 font-bold text-center">
                 Partners
             </h1>
             <div className="pt-6 max-w-6xl mx-auto">
