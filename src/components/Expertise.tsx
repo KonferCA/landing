@@ -26,7 +26,7 @@ const Expertise = () => {
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {expertiseData.map((item, index) => (
-            <div key={index} className="relative overflow-hidden rounded-lg h-[200px] sm:h-[300px] md:h-[350px] lg:h-[600px] xl:h-[800px]">
+            <div key={index} className="relative overflow-hidden rounded-lg h-[180px] sm:h-[250px] md:h-[300px] lg:h-[400px] xl:h-[500px]">
               <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-expertise-gradient bg-opacity-40 flex items-end justify-center p-4">
                 <h4 className="font-montserrat font-bold text-xl md:text-2xl lg:text-[24px] xl:text-3xl text-white text-center">
