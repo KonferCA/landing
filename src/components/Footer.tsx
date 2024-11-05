@@ -7,7 +7,7 @@ import { footerIcon } from "@assets";
 const Footer = () => {
     return (
         <div>
-            <hr className="border-t-1 border-gray-200 mt-12 mb-12" />
+            <hr className="border-t-1 border-[#3D3D3D] mt-12 mb-12" />
             
             <footer>
                 <div className="grid grid-cols-2 gap-2">
