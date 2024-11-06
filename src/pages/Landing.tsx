@@ -4,6 +4,7 @@ const Landing = () => {
     return (
         <main className="min-h-screen bg-[#1C1C1C] text-white">
             <Header />
+            <Hero />
             <About />
             <Partners />
             <Contact />
