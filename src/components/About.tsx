@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div className="text-white p-8 min-h-screen">
+        <section className="text-white p-8 min-h-screen">
             <div className="max-w-[1200px] mx-auto">
                 <h1 className="text-4xl font-bold mb-6">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#5084F5] to-[#00FFCC]">About Konfer</span>
@@ -56,7 +56,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
