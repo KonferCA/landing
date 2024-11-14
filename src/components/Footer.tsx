@@ -46,13 +46,13 @@ const Footer = () => {
                         </p>
 
                         <a 
-                            href="https://maps.app.goo.gl/tHhBEYXZiyr5hpgq6"
+                            href="https://maps.app.goo.gl/eYvWwuUKGzNMUVyMA"
                             target="_blank"
                             rel="noreferrer"
                             className="text-sm lg:text-md text-white hover:underline"
                         >
-                            69 Breithaupt St, <br />
-                            Kitchener, ON N2H 3X7
+                            283 Duke St West, <br />
+                            Kitchener, ON N2H 5C2
                         </a>
                     </div>
 
