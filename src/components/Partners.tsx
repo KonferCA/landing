@@ -8,9 +8,10 @@ import {
     SPURBrand,
     SPURLogo,
 } from '@assets';
+
 const Partners = () => {
     return (
-        <section>
+        <section id="partners">
             <h1 className="text-4xl mb-6 lg:text-5xl lg:mb-0 font-bold text-center">
                 Partners
             </h1>
