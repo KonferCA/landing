@@ -12,6 +12,7 @@ import LCSEvent from './lcs-event.png';
 import CollisionEvent from './collision-event.png';
 import CollisionLogo from './collision-logo.png';
 import HawkHacksEvent from './hawkhacks-event.png';
+import footerIcon from './footerIcon.svg';
 
 export {
     HawkHacksLogo,
@@ -28,4 +29,5 @@ export {
     CollisionLogo,
     HawkHacksEvent,
     LCSLogoEvent
+    footerIcon,
 };
