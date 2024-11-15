@@ -5,5 +5,5 @@ export { Events } from './Events';
 export { Contact } from './Contact';
 export { Footer } from './Footer';
 export { Partners } from './Partners';
+export { Team } from './Team';
 export { Expertise } from './Expertise';
-export { Partners } from './Partners';
