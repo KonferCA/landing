@@ -7,6 +7,7 @@ import LCSLogo from './lcs-logo.svg';
 import SPURLogo from './spur-logo.svg';
 import ETHTorontoLogo from './eth-toronto-logo.svg';
 import ETHWomenLogo from './eth-women-logo.svg';
+import footerIcon from './footerIcon.svg';
 
 export {
     HawkHacksLogo,
@@ -18,4 +19,5 @@ export {
     SPURLogo,
     ETHTorontoLogo,
     ETHWomenLogo,
+    footerIcon,
 };
