@@ -30,7 +30,7 @@ const Events = () => {
     ];
 
     return (
-        <div className="mb-10">
+        <section id="past-events" className="mb-10">
             <h2 className="text-white text-4xl font-bold mb-2 text-center p-6">Past Events</h2>
             
             <div className="flex flex-col gap-4">
@@ -72,7 +72,7 @@ const Events = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 
