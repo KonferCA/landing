@@ -1,10 +1,11 @@
-import { Header, About, Contact, Partners, Footer } from '@components';
-
+import {Header, About, Contact, Partners, Expertise, Footer } from '@components'
 
 const Landing = () => {
     return (
-        <main className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
+        <main className="min-h-screen bg-[#1C1C1C] text-white">
             <Header />
+            <Hero />
+            <Expertise />
             <About />
             <Partners />
             <Contact />
