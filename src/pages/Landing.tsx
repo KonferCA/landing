@@ -1,4 +1,4 @@
-import {Header, About, Contact, Partners, Expertise, Footer } from '@components'
+import { Header, About, Contact, Partners, Expertise, Events, Footer } from '@components'
 
 const Landing = () => {
     return (
@@ -7,6 +7,7 @@ const Landing = () => {
             <Hero />
             <Expertise />
             <About />
+            <Events />
             <Partners />
             <Contact />
             <Footer />
