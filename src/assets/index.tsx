@@ -28,6 +28,6 @@ export {
     CollisionEvent,
     CollisionLogo,
     HawkHacksEvent,
-    LCSLogoEvent
+    LCSLogoEvent,
     footerIcon,
 };
