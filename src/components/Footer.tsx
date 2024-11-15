@@ -4,6 +4,7 @@ import { BsChat } from "react-icons/bs";
 
 import { footerIcon } from "@assets";
 
+// TODO: Match the footer design with the Figma design
 const Footer = () => {
     return (
         <div>
