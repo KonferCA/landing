@@ -5,9 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-black text-white;
-  font-family: 'Inter', sans-serif;
+body, html {
+    @apply bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white;
+    font-family: 'Inter', sans-serif;
 }
 
 @layer utilities {
