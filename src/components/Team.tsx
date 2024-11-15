@@ -52,6 +52,7 @@ const Team = () => {
         }
     ];
 
+    // TODO: Store images somewhere else and pull from there (locally or cloud)
     return (
         <div className="py-16 m-2 md:m-8">
             <div className="max-w-[90%] md:max-w-6xl mx-auto">
