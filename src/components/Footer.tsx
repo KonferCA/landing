@@ -2,9 +2,8 @@ import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { BsChat } from "react-icons/bs";
 
-import { footerIcon } from "@assets";
+import { FooterIcon } from "@assets";
 
-// TODO: Match the footer design with the Figma design
 const Footer = () => {
     return (
         <div>
@@ -13,7 +12,7 @@ const Footer = () => {
             <footer>
                 <div className="grid grid-cols-2 gap-2">
                     <div className="pl-6 lg:pl-12">
-                        <img src={footerIcon} alt="footer-icon" className="w-36 lg:w-72" />
+                        <img src={FooterIcon} alt="footer-icon" className="w-36 lg:w-72" />
 
                         <div className="flex gap-4 mt-4">
                             <a 
