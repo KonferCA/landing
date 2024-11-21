@@ -5,6 +5,7 @@ import CollisionEvent from './events/collision-event.png';
 import CollisionLogo from './events/collision-logo.png';
 import HawkHacksEvent from './events/hawkhacks-event.png'
 import HawkHacksLogo from './events/hawkhacks-logo.svg';
+import BBQEvent from './events/bbq.jpg';
 
 // Expertise
 import PartiesImage from './expertise/parties.png';
@@ -14,6 +15,7 @@ import SeminarsImage from './expertise/seminars.png';
 
 // Hero
 import HeroImage from './hero/hero.png';
+import BrandLogo from './brand/logo.svg';
 
 // Partners
 import LCSLogo from './partners/lcs-logo.svg';
@@ -49,6 +51,7 @@ export {
     CollisionLogo,
     HawkHacksEvent,
     LCSLogoEvent,
+    BBQEvent,
 
     // Expertise
     PartiesImage,
@@ -58,6 +61,7 @@ export {
 
     // Hero
     HeroImage,
+    BrandLogo,
 
     // Partners
     HawkHacksLogo,

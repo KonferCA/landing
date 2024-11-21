@@ -5,24 +5,32 @@ import {
     CollisionLogo,
     LCSEvent,
     LCSLogoEvent,
+    SPURLogo,
+    BBQEvent,
 } from '@assets';
 
 const Events = () => {
     const events = [
         {
             id: 1,
+            title: 'SPUR Community BBQ Festival - Presented by Konfer x SPUR Innovation Center',
+            logo: SPURLogo,
+            image: BBQEvent,
+        },
+        {
+            id: 2,
             title: 'HawkHacks 2024',
             logo: HawkHacksLogo,
             image: HawkHacksEvent
         },
         {
-            id: 2,
+            id: 3,
             title: 'Yacht After-Party - Collision 2024',
             logo: CollisionLogo,
             image: CollisionEvent
         },
         {
-            id: 3,
+            id: 4,
             title: 'Laurier Computing Society',
             logo: LCSLogoEvent,
             image: LCSEvent
