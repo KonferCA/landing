@@ -1,14 +1,10 @@
-// TODO: Add alias imports here
-import partiesImage from '../assets/expertise/parties.png';
-import conferencesImage from '../assets/expertise/conferences.png';
-import networkingImage from '../assets/expertise/networking.png';
-import seminarsImage from '../assets/expertise/seminars.png';
+import { PartiesImage, ConferencesImage, NetworkingImage, SeminarsImage } from '@assets'; 
 
 const expertiseData = [
-    { title: 'PARTIES', image: partiesImage },
-    { title: 'CONFERENCES', image: conferencesImage },
-    { title: 'NETWORKING', image: networkingImage },
-    { title: 'SEMINARS', image: seminarsImage },
+    { title: 'PARTIES', image: PartiesImage },
+    { title: 'CONFERENCES', image: ConferencesImage },
+    { title: 'NETWORKING', image: NetworkingImage },
+    { title: 'SEMINARS', image: SeminarsImage },
 ];
 
 const Expertise = () => {
@@ -19,7 +15,7 @@ const Expertise = () => {
                     We Bridge Innovation.
                 </h2>
 
-                <p className="font-inter font-medium text-xl md:text-2xl lg:text-[16px] text-white mt-4 mb-12">
+                <p className="font-inter font-medium text-xl md:text-2xl lg:text-[28px] text-white mt-4 mb-12">
                     By organizing high-impact events that connect innovative businesses to ambitious students and young professionals.
                 </p>
 
