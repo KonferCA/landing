@@ -1,13 +1,11 @@
-// TODO: Add alias import
-import heroImage from '../assets/hero.png';
+import { HeroImage } from '@assets';
 
 const Hero = () => {
     return (
         <section id="hero" className="relative w-full h-screen flex items-center justify-center">
-            {/* background image */}
             <div 
                 className="absolute inset-0 bg-cover bg-center z-0"
-                style={{ backgroundImage: `url(${heroImage})` }}
+                style={{ backgroundImage: `url(${HeroImage})` }}
             ></div>
             
             {/* content overlay */}
