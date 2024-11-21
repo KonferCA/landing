@@ -14,6 +14,18 @@ import CollisionLogo from './collision-logo.png';
 import HawkHacksEvent from './hawkhacks-event.png';
 import footerIcon from './footerIcon.svg';
 
+// Team
+import Aidan from './aidan-headshot.jpg';
+import Amir from './amir-headshot.jpg';
+import Arnav from './arnav-headshot.jpg';
+import Colman from './colman-headshot.jpg';
+import Juan from './juan-headshot.jpg';
+import Max from './max-headshot.jpg';
+import Nausher from './nausher-headshot.jpg';
+import Nish from './nish-headshot.jpg';
+import Shakib from './shakib-headshot.jpg';
+import Vincenzo from './vincenzo-headshot.jpg';
+
 export {
     HawkHacksLogo,
     HawkHacksBrand,
@@ -30,4 +42,15 @@ export {
     HawkHacksEvent,
     LCSLogoEvent,
     footerIcon,
+
+    Aidan,
+    Amir,
+    Arnav,
+    Colman,
+    Juan,
+    Max,
+    Nausher,
+    Nish,
+    Shakib,
+    Vincenzo,
 };
