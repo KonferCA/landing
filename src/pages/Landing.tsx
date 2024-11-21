@@ -14,7 +14,7 @@ const Landing = () => {
             <section className="py-8 lg:py-12">
                 <About />
             </section>
-            <section className="py-2 lg:py-12">
+            <section className="py-2 lg:py-8">
                 <Team />
             </section>
             <section className="py-2 lg:py-12">
