@@ -13,17 +13,17 @@ const expertiseData = [
 
 const Expertise = () => {
     return (
-        <section className="w-full py-16">
+        <section className="w-full px-4 md:px-8 lg:px-16 xl:px-24">
             <div className="mx-auto px-4 md:px-8 lg:px-16 xl:px-24">
-                <h2 className="font-inter font-extrabold text-6xl md:text-8xl lg:text-[96px] leading-[1.1] py-2 bg-gradient-to-r from-[#F8D0AA] to-[#AAAAAA] text-transparent bg-clip-text">
+                <h2 className="font-inter font-extrabold text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-[128px] leading-[1.1] py-2 bg-gradient-to-r from-[#F8D0AA] to-[#AAAAAA] text-transparent bg-clip-text">
                     We Bridge Innovation.
                 </h2>
 
-                <p className="font-inter font-medium text-2xl md:text-3xl lg:text-[32px] text-white mt-4 mb-12">
+                <p className="font-inter font-medium text-xl md:text-2xl lg:text-[16px] text-white mt-4 mb-12">
                     By organizing high-impact events that connect innovative businesses to ambitious students and young professionals.
                 </p>
 
-                <h3 className="font-inter font-normal text-xl md:text-2xl lg:text-[24px] text-white mb-8">
+                <h3 className="font-inter font-normal text-lg md:text-xl lg:text-[24px] text-white mb-8">
                     Our Expertise
                 </h3>
 
