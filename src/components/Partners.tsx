@@ -1,5 +1,6 @@
 import {
     AvalancheBrand,
+    BlockchainFuturist,
     ETHTorontoLogo,
     ETHWomenLogo,
     HawkHacksBrand,
@@ -36,6 +37,10 @@ const partnerInfo = {
     spurLogo: {
         name: "SPUR Innovation",
         website: "https://spurinnovation.com"
+    },
+    blockchainFuturist: {
+        name: "Blockchain Futurist",
+        website: 'https://www.futuristconference.com/'
     },
     ethToronto: {
         name: "ETH Toronto",
@@ -89,8 +94,9 @@ const Partners = () => {
             <h1 className="text-4xl font-bold text-center mb-12">
                 Partners
             </h1>
+            
             <div className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 place-items-center mb-12">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 lg:gap-x-16 gap-y-12 mb-12">
                     <div className="w-full flex justify-center">
                         <PartnerImage 
                             src={HawkHacksBrand} 
@@ -121,42 +127,69 @@ const Partners = () => {
                     </div>
                 </div>
 
-                <div className="bg-[#0E0E0E] rounded-2xl p-6 sm:p-8 lg:p-12">
-                    <h2 className="text-3xl text-center font-bold mb-8">
+                <div className="bg-[#0E0E0E] rounded-2xl p-8 lg:p-12">
+                    <h2 className="text-3xl text-center font-bold mb-8 lg:mb-12">
                         Community partners
                     </h2>
-                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 place-items-center">
-                        <div className="w-full flex justify-center">
-                            <PartnerImage 
-                                src={LCSLogo} 
-                                info={partnerInfo.lcs}
-                                className="w-[60px] sm:w-[70px] lg:w-[90px] hover:scale-110 transition-all duration-300"
-                            />
-                        </div>
-                        <div className="w-full flex justify-center">
-                            <PartnerImage 
-                                src={SPURLogo} 
-                                info={partnerInfo.spurLogo}
-                                className="w-[50px] sm:w-[60px] lg:w-[80px] hover:scale-110 transition-all duration-300"
-                            />
-                        </div>
-                        <div className="w-full flex justify-center">
-                            <PartnerImage 
-                                src={ETHTorontoLogo} 
-                                info={partnerInfo.ethToronto}
-                                className="w-[180px] sm:w-[220px] lg:w-[300px] hover:scale-110 transition-all duration-300"
-                            />
-                        </div>
-                        <div className="w-full flex justify-center">
-                            <PartnerImage 
-                                src={ETHWomenLogo} 
-                                info={partnerInfo.ethWomen}
-                                className="w-[150px] sm:w-[180px] lg:w-[250px] hover:scale-110 transition-all duration-300"
-                            />
-                        </div>
+
+                    <div className="hidden lg:grid lg:grid-cols-5 lg:gap-x-12 lg:place-items-center">
+                        <PartnerImage 
+                            src={LCSLogo} 
+                            info={partnerInfo.lcs}
+                            className="w-[90px] hover:scale-110 transition-all duration-300"
+                        />
+                        <PartnerImage 
+                            src={SPURLogo} 
+                            info={partnerInfo.spurLogo}
+                            className="w-[80px] hover:scale-110 transition-all duration-300"
+                        />
+                        <PartnerImage 
+                            src={BlockchainFuturist}
+                            info={partnerInfo.blockchainFuturist}
+                            className="w-[300px] hover:scale-110 transition-all duration-300"
+                        />
+                        <PartnerImage 
+                            src={ETHTorontoLogo} 
+                            info={partnerInfo.ethToronto}
+                            className="w-[300px] hover:scale-110 transition-all duration-300"
+                        />
+                        <PartnerImage 
+                            src={ETHWomenLogo} 
+                            info={partnerInfo.ethWomen}
+                            className="w-[250px] hover:scale-110 transition-all duration-300"
+                        />
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-8 place-items-center lg:hidden">
+                        <PartnerImage 
+                            src={LCSLogo} 
+                            info={partnerInfo.lcs}
+                            className="w-[60px] sm:w-[70px] hover:scale-110 transition-all duration-300"
+                        />
+                        <PartnerImage 
+                            src={SPURLogo} 
+                            info={partnerInfo.spurLogo}
+                            className="w-[50px] sm:w-[60px] hover:scale-110 transition-all duration-300"
+                        />
+                        <PartnerImage 
+                            src={BlockchainFuturist}
+                            info={partnerInfo.blockchainFuturist}
+                            className="w-[180px] sm:w-[220px] hover:scale-110 transition-all duration-300"
+                        />
+                        <PartnerImage 
+                            src={ETHTorontoLogo} 
+                            info={partnerInfo.ethToronto}
+                            className="w-[180px] sm:w-[220px] hover:scale-110 transition-all duration-300"
+                        />
+                        <PartnerImage 
+                            src={ETHWomenLogo} 
+                            info={partnerInfo.ethWomen}
+                            className="col-span-2 w-[150px] sm:w-[180px] hover:scale-110 transition-all duration-300"
+                        />
                     </div>
                 </div>
             </div>
+
 
             <style>{`
                 .partner-tooltip {
