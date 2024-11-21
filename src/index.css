@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body, html {
+html {
+    min-height: 100%;
+}
+
+body {
     @apply bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white;
     font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @layer utilities {
