@@ -33,8 +33,10 @@ import Aidan from './team/aidan-headshot.jpg';
 import Amir from './team/amir-headshot.jpg';
 import Arnav from './team/arnav-headshot.jpg';
 import Colman from './team/colman-headshot.jpg';
+import Jackie from './team/jackie-headshot.jpg';
 import Juan from './team/juan-headshot.jpg';
-import Max from './team//max-headshot.jpg';
+import Max from './team/max-headshot.jpg';
+import Mobi from './team/mobi-headshot.jpg'
 import Nausher from './team/nausher-headshot.jpg';
 import Nish from './team/nish-headshot.jpg';
 import Shakib from './team/shakib-headshot.jpg';
@@ -79,8 +81,10 @@ export {
     Amir,
     Arnav,
     Colman,
+    Jackie,
     Juan,
     Max,
+    Mobi,
     Nausher,
     Nish,
     Shakib,
