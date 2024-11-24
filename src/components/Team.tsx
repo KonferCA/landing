@@ -1,4 +1,4 @@
-import { Aidan, Amir, Arnav, Colman, Juan, Max, Nausher, Nish, Shakib, Vincenzo } from '@assets';
+import { Aidan, Amir, Arnav, Colman, Jackie, Juan, Max, Mobi, Nausher, Nish, Shakib, Vincenzo } from '@assets';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/material.css';
@@ -70,13 +70,27 @@ const teamMembers = [
         linkedin: 'https://linkedin.com/in/aidan-traboulay',
         github: 'https://github.com/aidantrabs',
         bio: 'Lorem ipsum monkey'
+    },  
+    {
+        name: 'Jacqueline Truong',
+        title: 'Chief Creative Officer',
+        image: Jackie,
+        linkedin: 'https://www.linkedin.com/in/jacquellinetruong/',
+        bio: 'Lorem ipsum monkey',
     },
     {
         name: 'Colman Tsang',
         title: 'Product Designer',
         image: Colman,
         linkedin: 'https://www.linkedin.com/in/colman-tsang/',
-        bio: 'Lorem ipsum monkey'
+        bio: 'Lorem ipsum monkey',
+    },
+    {
+        name: 'Mobina Tooranisama',
+        title: 'Social Media Coordinator',
+        image: Mobi,
+        linkedin: 'https://www.linkedin.com/in/mobina-tooranisama/',
+        bio: 'Hey! I\'m Mobina, I\'m 22 and have recently graduated from Wilfrid Laurier University with a Bachelor of Science with a major in Computer Science. I am the Social Media Coordinator here at Konfer!',
     }
 ];
 
