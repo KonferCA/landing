@@ -7,7 +7,7 @@ import {
     LCSLogo,
     NEARTorontoBrand,
     SPURBrand,
-    SPURLogo,
+    WaterlooBlockchain,
 } from '@assets';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
@@ -34,9 +34,9 @@ const partnerInfo = {
         name: "Laurier Computing Society",
         website: "https://lauriercs.ca"
     },
-    spurLogo: {
-        name: "SPUR Innovation",
-        website: "https://spurinnovation.com"
+    waterlooBlockchain: {
+        name: "Waterloo Blockchain",
+        website: "https://www.waterlooblockchain.ca/"
     },
     blockchainFuturist: {
         name: "Blockchain Futurist",
@@ -139,8 +139,8 @@ const Partners = () => {
                             className="w-[90px] hover:scale-110 transition-all duration-300"
                         />
                         <PartnerImage 
-                            src={SPURLogo} 
-                            info={partnerInfo.spurLogo}
+                            src={WaterlooBlockchain} 
+                            info={partnerInfo.waterlooBlockchain}
                             className="w-[80px] hover:scale-110 transition-all duration-300"
                         />
                         <PartnerImage 
@@ -167,8 +167,8 @@ const Partners = () => {
                             className="w-[60px] sm:w-[70px] hover:scale-110 transition-all duration-300"
                         />
                         <PartnerImage 
-                            src={SPURLogo} 
-                            info={partnerInfo.spurLogo}
+                            src={WaterlooBlockchain} 
+                            info={partnerInfo.waterlooBlockchain}
                             className="w-[50px] sm:w-[60px] hover:scale-110 transition-all duration-300"
                         />
                         <PartnerImage 

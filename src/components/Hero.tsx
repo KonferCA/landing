@@ -8,7 +8,6 @@ const Hero = () => {
                 style={{ backgroundImage: `url(${HeroImage})` }}
             ></div>
             
-            {/* content overlay */}
             <div className="relative z-10 w-full max-w-4xl mx-auto text-center space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 px-4">
                 <h1 className="font-bold leading-tight text-almond font-inter">
                     <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-[128px]">

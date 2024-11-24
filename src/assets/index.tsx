@@ -23,7 +23,7 @@ import HawkHacksBrand from './partners/hawkhacks-brand.svg';
 import AvalancheBrand from './partners/avalanche-brand.svg';
 import NEARTorontoBrand from './partners/near-toronto-brand.svg';
 import SPURBrand from './partners/spur-brand.svg';
-import SPURLogo from './partners/spur-logo.svg';
+import WaterlooBlockchain from './partners/waterloo-blockchain-logo.svg';
 import BlockchainFuturist from './partners/blockchain-futurist-conference-logo.svg'
 import ETHTorontoLogo from './partners/eth-toronto-logo.svg';
 import ETHWomenLogo from './partners/eth-women-logo.svg';
@@ -72,7 +72,7 @@ export {
     NEARTorontoBrand,
     BlockchainFuturist,
     SPURBrand,
-    SPURLogo,
+    WaterlooBlockchain,
     ETHTorontoLogo,
     ETHWomenLogo,
 
