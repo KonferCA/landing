@@ -18,47 +18,47 @@ body {
 }
 
 @layer utilities {
-  .animate-fade-in {
-    animation: fadeIn 1s ease-out;
-  }
+    .animate-fade-in {
+        animation: fadeIn 1s ease-out;
+    }
 
-  .animation-delay-300 {
-    animation-delay: 300ms;
-  }
+    .animation-delay-300 {
+        animation-delay: 300ms;
+    }
 
-  .animation-delay-600 {
-    animation-delay: 600ms;
-  }
+    .animation-delay-600 {
+        animation-delay: 600ms;
+    }
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
 
-  .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-  }
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+    }
 
-  .hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: currentColor;
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-  }
+    .hover-underline-animation::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: currentColor;
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+    }
 
-  .hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+    .hover-underline-animation:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
 }
 
 ::selection {
-  background-color: rgba(139, 92, 246, 0.3);
+    background-color: rgba(139, 92, 246, 0.3);
 }
