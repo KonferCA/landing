@@ -6,3 +6,4 @@ export { Footer } from './Footer';
 export { Partners } from './Partners';
 export { Team } from './Team';
 export { Expertise } from './Expertise';
+export { Loading } from './Loading';
