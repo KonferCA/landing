@@ -44,7 +44,6 @@ const Events = () => {
     return (
         <section id="past-events">
             <h2 className="text-white text-4xl font-bold mb-12 text-center">Past Events</h2>
-            
             <div className="flex flex-col gap-4">
                 {events.map((event, index) => (
                     <div key={event.id}>
@@ -52,7 +51,7 @@ const Events = () => {
                             href={event.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`relative ${
+                            className={`block relative ${
                                 index % 2 === 0 
                                     ? 'w-[85vw] rounded-r-2xl' 
                                     : 'w-[85vw] rounded-l-2xl ml-[15vw]'
@@ -68,9 +67,7 @@ const Events = () => {
                                     alt={event.title}
                                     className="absolute inset-0 w-full h-full object-cover bg-[#224F69]"
                                 />
-                                
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-
                                 <div className="absolute bottom-0 left-0 p-4 w-full flex items-center space-x-3">
                                     <div className="w-10 h-10 rounded-full flex items-center justify-center">
                                         <img 
@@ -79,7 +76,6 @@ const Events = () => {
                                             className="w-full h-full object-contain"
                                         />
                                     </div>
-                                    
                                     <span className="text-white font-bold">
                                         {event.title}
                                     </span>
