@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { motion, AnimatePresence } from 'framer-motion';
-import { IoCloseOutline } from "react-icons/io5";
-import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
-import { BsChat } from "react-icons/bs";
+import { IoCloseOutline } from 'react-icons/io5';
+import { FaXTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa6';
+import { BsChat } from 'react-icons/bs';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,20 +21,20 @@ const Header = () => {
     const menuVariants = {
         closed: {
             opacity: 0,
-            x: "100%",
+            x: '100%',
             transition: {
-                type: "tween",
-                duration: 0.3
-            }
+                type: 'tween',
+                duration: 0.3,
+            },
         },
         open: {
             opacity: 1,
             x: 0,
             transition: {
-                type: "tween",
-                duration: 0.3
-            }
-        }
+                type: 'tween',
+                duration: 0.3,
+            },
+        },
     };
 
     const handleLinkClick = () => {
@@ -69,7 +69,9 @@ const Header = () => {
 
     return (
         <>
-            <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-md' : 'bg-transparent'}`}>
+            <header
+                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-md' : 'bg-transparent'}`}
+            >
                 <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
                     <div className="flex items-center gap-2">
                         <Link
@@ -89,6 +91,15 @@ const Header = () => {
 
                     <nav className="hidden md:flex items-center gap-8">
                         <Link
+                            to="past-events"
+                            smooth={true}
+                            duration={500}
+                            offset={-100}
+                            className="text-white hover:text-blue-400 transition-colors cursor-pointer"
+                        >
+                            Our Work
+                        </Link>
+                        <Link
                             to="about-us"
                             smooth={true}
                             duration={500}
@@ -98,13 +109,13 @@ const Header = () => {
                             About Us
                         </Link>
                         <Link
-                            to="past-events"
+                            to="team"
                             smooth={true}
                             duration={500}
                             offset={-100}
                             className="text-white hover:text-blue-400 transition-colors cursor-pointer"
                         >
-                            Our Work
+                            Team
                         </Link>
                         <Link
                             to="partners"
@@ -151,9 +162,9 @@ const Header = () => {
                                     className="cursor-pointer"
                                 >
                                     <img
-                                    src="/konfer_logo.svg"
-                                    alt="Konfer"
-                                    className="h-8"
+                                        src="/konfer_logo.svg"
+                                        alt="Konfer"
+                                        className="h-8"
                                     />
                                 </Link>
                                 <button
@@ -166,6 +177,16 @@ const Header = () => {
 
                             <nav className="flex-1 flex flex-col px-8 pt-12 space-y-6">
                                 <Link
+                                    to="past-events"
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-100}
+                                    onClick={handleLinkClick}
+                                    className="text-gray-300 text-2xl cursor-pointer"
+                                >
+                                    Our Work
+                                </Link>
+                                <Link
                                     to="about-us"
                                     smooth={true}
                                     duration={500}
@@ -176,14 +197,14 @@ const Header = () => {
                                     About Us
                                 </Link>
                                 <Link
-                                    to="past-events"
+                                    to="team"
                                     smooth={true}
                                     duration={500}
                                     offset={-100}
                                     onClick={handleLinkClick}
                                     className="text-gray-300 text-2xl cursor-pointer"
                                 >
-                                    Our Work
+                                    Team
                                 </Link>
                                 <Link
                                     to="partners"
@@ -199,7 +220,9 @@ const Header = () => {
 
                             <div className="p-8 space-y-8">
                                 <div className="text-left ml-0">
-                                    <h2 className="text-white text-2xl mb-2 font-bold">Ready to Innovate?</h2>
+                                    <h2 className="text-white text-2xl mb-2 font-bold">
+                                        Ready to Innovate?
+                                    </h2>
                                     <a
                                         href="mailto:hello@konfer.ca"
                                         className="
@@ -226,13 +249,22 @@ const Header = () => {
                                 </div>
 
                                 <div className="flex justify-left gap-6">
-                                    <a href="https://x.com/Konferca" className="text-white">
+                                    <a
+                                        href="https://x.com/Konferca"
+                                        className="text-white"
+                                    >
                                         <FaXTwitter size={24} />
                                     </a>
-                                    <a href="https://instagram.com/konfer.ca/" className="text-white">
+                                    <a
+                                        href="https://instagram.com/konfer.ca/"
+                                        className="text-white"
+                                    >
                                         <FaInstagram size={24} />
                                     </a>
-                                    <a href="https://linkedin.com/company/konferca/" className="text-white">
+                                    <a
+                                        href="https://linkedin.com/company/konferca/"
+                                        className="text-white"
+                                    >
                                         <FaLinkedin size={24} />
                                     </a>
                                 </div>
