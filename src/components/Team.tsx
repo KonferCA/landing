@@ -2,7 +2,7 @@ import { Aidan, Amir, Arnav, Colman, Jackie, Juan, Max, Mobi, Nausher, Nish, Sha
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/themes/material.css';
-import { FaLinkedin, FaGithub } from 'react-icons/fa6';
+import { FaLinkedin, FaGlobe } from 'react-icons/fa6';
 
 const teamMembers = [
     {
@@ -10,80 +10,82 @@ const teamMembers = [
         title: 'Chief Executive Officer',
         image: Nausher,
         linkedin: 'https://www.linkedin.com/in/nausherrao/',
-        bio: 'Lorem ipsum monkey'
+        website: 'http://sherrao.tech/',
     },
     {
         name: 'Arnav Chauhan',
         title: 'Chief Operating Officer',
         image: Arnav,
         linkedin: 'https://www.linkedin.com/in/arnavchauhan/',
-        bio: 'Lorem ipsum monkey'
+        bio: 'Hi, I\'m Arnav! A business and computer science student with a passion for sales, finance, & entrepreneurship.',
     },
     {
         name: 'Maximus Ghosh',
         title: 'Chief Finance Officer',
         image: Max,
         linkedin: 'https://www.linkedin.com/in/maximus-ghosh-b7234b237/',
-        bio: 'Lorem ipsum monkey'
+        bio: 'Hey, I\'m Maximus! I\'m a CS student with a designer\'s heart. I love blending my passion for tech and art, and continuously work to build projects that are functional and captivating.',
     },
     {
         name: 'Nish Tewari',
         title: 'Chief Strategy Officer',
         image: Nish,
         linkedin: 'https://www.linkedin.com/in/nish-tewari/',
-        bio: 'Lorem ipsum monkey'
     },
     {
         name: 'Vincenzo Milano',
         title: 'Chief Admin Officer',
         image: Vincenzo,
         linkedin: 'https://www.linkedin.com/in/vincenzo-milano/',
-        github: 'https://github.com/vincenzomilano',
-        bio: 'Lorem ipsum monkey'
+        website: 'https://vincenzomilano.tech',
+        bio: 'Hey, I\'m Vincenzo! I\'m passionate about building computers and exploring innovative technology. Currently, I\'m pursuing a double degree in Business and Computer Science, blending technical expertise with strategic thinking.',
     },
     {
         name: 'Shakib Ahmed',
         title: 'Chief Admin Officer',
         image: Shakib,
         linkedin: 'https://www.linkedin.com/in/shakib-ahmed/',
-        bio: 'Lorem ipsum monkey'
+        website: 'https://shakibdotme.wordpress.com',
+        bio: 'Hey, I\'m S(low)hakib!',
     },
     {
         name: 'Amir Agassi',
         title: 'VP Engineering',
         image: Amir,
         linkedin: 'https://www.linkedin.com/in/amir-agassi/',
-        bio: 'Lorem ipsum monkey'
+        website: 'https://amiragassi.com',
+        bio: 'Tech nerd, hardware enthusiast, and always looking for the next exciting project to dive into!',
     },
     {
         name: 'Juan Wu',
         title: 'VP Engineering',
         image: Juan,
         linkedin: 'https://www.linkedin.com/in/juancwu/',
-        github: 'https://github.com/juancwu',
-        bio: 'Lorem ipsum monkey'
+        website: 'https://juancwu.dev',
+        bio: 'Hey, I am Juan. I am CS student at Wilfrid Laurier and also a VP of Engineer at Konfer. I love to code and also tinker with hardware.',
     },
     {
         name: 'Aidan Traboulay',
         title: 'VP Engineering',
         image: Aidan,
         linkedin: 'https://linkedin.com/in/aidan-traboulay',
-        github: 'https://github.com/aidantrabs',
-        bio: 'Lorem ipsum monkey'
+        website: 'https://aidantraboulay.dev',
+        bio: 'Yo big dawg! I\'m Aidan, a software engineer and wannabe project manager.',
     },  
     {
         name: 'Jacqueline Truong',
         title: 'Chief Creative Officer',
         image: Jackie,
         linkedin: 'https://www.linkedin.com/in/jacquellinetruong/',
-        bio: 'Lorem ipsum monkey',
+        website: 'https://jacquelinetruong.dev/',
+        bio: 'Hi! I\'m Jacqueline — a computer science student and designer with a knack for bringing creativity to life. Whether it\'s crafting digital experiences or turning everyday ideas into art, I\'m all about making the world a little more eye-catching.',
     },
     {
         name: 'Colman Tsang',
-        title: 'Product Designer',
+        title: 'UX/UI Designer',
         image: Colman,
         linkedin: 'https://www.linkedin.com/in/colman-tsang/',
-        bio: 'Lorem ipsum monkey',
+        bio: 'Hey, I\'m Colman! I enjoy designing digital products with a purpose, In the past I\'ve designed in a variety of industries. In my free time I enjoy skiing, playing tennis, and fishing :).',
     },
     {
         name: 'Mobina Tooranisama',
@@ -98,32 +100,36 @@ interface TeamMember {
     name: string;
     title: string;
     image: string;
-    linkedin: string;
-    github?: string;
-    bio: string;
+    linkedin?: string;
+    website?: string;
+    bio?: string;
 }
 
 const TooltipContent = ({ member }: { member: TeamMember }) => (
     <div className="p-2">
         <div className="font-bold text-lg mb-2">{member.name}</div>
-        <div className="text-gray-300 text-sm mb-3">{member.bio}</div>
+        <div className="text-gray-300 text-sm mb-3">
+            {member.bio || "This person was lazy and will add a bio later!"}
+        </div>
         <div className="flex gap-3">
-            <a 
-                href={member.linkedin} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors"
-            >
-                <FaLinkedin size={20} />
-            </a>
-            {member.github && ( 
+            {member.linkedin && (
                 <a 
-                    href={member.github} 
+                    href={member.linkedin} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                    <FaLinkedin size={20} />
+                </a>
+            )}
+            {member.website && (
+                <a 
+                    href={member.website} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-gray-300 transition-colors"
                 >
-                    <FaGithub size={20} />
+                    <FaGlobe size={20} />
                 </a>
             )}
         </div>
