@@ -16,24 +16,28 @@ const Events = () => {
             title: 'SPUR Community BBQ Festival - Presented by Konfer x SPUR Innovation Center',
             logo: SPURBrand,
             image: BBQEvent,
+            link: 'https://lu.ma/aouu9bsq'
         },
         {
             id: 2,
             title: 'HawkHacks 2024',
             logo: HawkHacksLogo,
-            image: HawkHacksEvent
+            image: HawkHacksEvent,
+            link: 'https://hawkhacks.ca'
         },
         {
             id: 3,
             title: 'Yacht After-Party - Collision 2024',
             logo: CollisionLogo,
-            image: CollisionEvent
+            image: CollisionEvent,
+            link: 'https://lu.ma/8iwq9lxb'
         },
         {
             id: 4,
             title: 'Laurier Computing Society',
             logo: LCSLogoEvent,
-            image: LCSEvent
+            image: LCSEvent,
+            link: 'https://lauriercs.ca'
         }
     ];
 
@@ -44,11 +48,16 @@ const Events = () => {
             <div className="flex flex-col gap-4">
                 {events.map((event, index) => (
                     <div key={event.id}>
-                        <div className={`relative ${
-                            index % 2 === 0 
-                                ? 'w-[85vw] rounded-r-2xl' 
-                                : 'w-[85vw] rounded-l-2xl ml-[15vw]'
-                        }`}>
+                        <a 
+                            href={event.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`relative ${
+                                index % 2 === 0 
+                                    ? 'w-[85vw] rounded-r-2xl' 
+                                    : 'w-[85vw] rounded-l-2xl ml-[15vw]'
+                            }`}
+                        >
                             <div
                                 className={`relative lg:h-80 h-40 bg-[#1a1f2a] transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer overflow-hidden ${
                                     index % 2 === 0 ? 'rounded-r-2xl' : 'rounded-l-2xl'
@@ -76,7 +85,7 @@ const Events = () => {
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 ))}
             </div>
