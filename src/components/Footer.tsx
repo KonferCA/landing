@@ -1,7 +1,6 @@
 import { FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { BsChat } from "react-icons/bs";
-
 import { FooterIcon } from "@assets";
 
 const Footer = () => {
@@ -13,7 +12,6 @@ const Footer = () => {
                 <div className="grid grid-cols-2 gap-2">
                     <div className="pl-6 lg:pl-12">
                         <img src={FooterIcon} alt="footer-icon" className="w-36 lg:w-72" />
-
                         <div className="flex gap-4 mt-4">
                             <a 
                                 href="https://x.com/Konferca" 
@@ -40,11 +38,9 @@ const Footer = () => {
                                 <FaLinkedin />
                             </a>
                         </div>
-
                         <p className="text-sm lg:text-md text-white font-bold mt-6 mb-4">
                             Canada
                         </p>
-
                         <a 
                             href="https://maps.app.goo.gl/eYvWwuUKGzNMUVyMA"
                             target="_blank"
@@ -55,24 +51,38 @@ const Footer = () => {
                             Kitchener, ON N2H 5C2
                         </a>
                     </div>
-
                     <div className="text-right pr-6 lg:pr-12">
                         <h2 className="text-lg font-bold text-white lg:text-2xl"> Ready to Innovate? </h2>
-
                         <a
                             href="mailto:hello@konfer.ca"
-                            className="inline-block text-white font-bold text-sm lg:text-xl py-2 px-2 lg:px-4 lg:py-4 rounded-full transition-colors duration-300 bg-gradient-to-r from-azure to-celestial-blue font-inter mt-4"
+                            className="
+                                inline-flex items-center justify-center
+                                text-white font-semibold
+                                text-sm lg:text-lg
+                                h-10 lg:h-12
+                                px-4 lg:px-6
+                                rounded-3xl
+                                bg-gradient-to-r from-azure to-celestial-blue
+                                shadow-lg shadow-celestial-blue/20
+                                hover:shadow-xl hover:shadow-celestial-blue/30
+                                hover:translate-y-[-2px]
+                                active:translate-y-[1px]
+                                font-inter tracking-wide
+                                transition-all duration-200
+                                border border-white/10
+                                backdrop-blur-sm
+                                mt-4
+                                group
+                            "
                         >
                             hello@konfer.ca
-                            <BsChat className="lg:inline-block md:inline-block sm:inline-block text-lg lg:text-2xl text-white ml-2 mb-1 hidden" />
+                            <BsChat className="ml-2 mb-0.5 hidden lg:inline-block group-hover:scale-110 transition-transform duration-200" />
                         </a>
                     </div>
                 </div>
-
                 <hr className="border-t-1 border-[#3D3D3D] mt-14 mb-8 ml-12 mr-12 w-auto" />
-
                 <p className="text-sm text-white text-center lg:text-left lg:ml-12 pb-12">
-                    Konfer &copy; 2024 | <a href="https://www.konfer.ca"> Terms of Use </a>
+                    Konfer &copy; 2024. All rights reserved.
                 </p>
             </footer>
         </div>

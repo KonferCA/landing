@@ -18,15 +18,30 @@ const Hero = () => {
                     </div>
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-normal text-seasalt mx-auto font-inter leading-snug">
-                    Konfer bridges innovative companies with <br className="hidden sm:block" />
-                    the next generation of tech talent.
+                    A premier consultancy based in Canada.
                 </p>
                 <div className="flex justify-center">
                     <a
-                        href="#contact"
-                        className="inline-block text-white font-extrabold text-lg sm:text-xl md:text-2xl lg:text-3xl py-2 sm:py-3 px-6 sm:px-8 rounded-full transition-colors duration-300 bg-gradient-to-r from-azure to-celestial-blue font-inter"
+                        href="mailto:hello@konfer.ca"
+                        className="
+                            inline-flex items-center justify-center
+                            text-white font-semibold
+                            text-lg sm:text-xl md:text-2xl
+                            h-12 sm:h-14 md:h-16
+                            px-8 sm:px-10 md:px-12
+                            rounded-3xl
+                            bg-gradient-to-r from-azure to-celestial-blue
+                            shadow-lg shadow-celestial-blue/20
+                            hover:shadow-xl hover:shadow-celestial-blue/30
+                            hover:translate-y-[-2px]
+                            active:translate-y-[1px]
+                            font-inter tracking-wide
+                            transition-all duration-200
+                            border border-white/10
+                            backdrop-blur-sm
+                        "
                     >
-                        GET IN TOUCH
+                        Get in Touch
                     </a>
                 </div>
             </div>
