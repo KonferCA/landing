@@ -1,6 +1,6 @@
 // Events
 import LCSLogoEvent from './events/lcs-logo-nobg.png';
-import LCSEvent from './events/lcs-event.png';
+import LCSEvent from './events/lcs-banner.png';
 import CollisionEvent from './events/collision-event.png';
 import CollisionLogo from './events/collision-logo.png';
 import HawkHacksEvent from './events/hawkhacks-event.png'
