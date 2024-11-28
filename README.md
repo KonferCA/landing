@@ -22,7 +22,7 @@ $ npm install -g pnpm
 
 > Clone the repo
 ```sh
-$ git clone https://github.com/LaurierHawkHacks/Landing.git
+$ git clone https://github.com/KonferCA/Konfer.ca.git
 ```
 
 > From your terminal, navigate to the root path of clone
