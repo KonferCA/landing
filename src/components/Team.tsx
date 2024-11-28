@@ -27,18 +27,18 @@ const teamMembers = [
         bio: 'Hey, I\'m Maximus! I\'m a CS student with a designer\'s heart. I love blending my passion for tech and art, and continuously work to build projects that are functional and captivating.',
     },
     {
-        name: 'Nish Tewari',
-        title: 'Chief Strategy Officer',
-        image: Nish,
-        linkedin: 'https://www.linkedin.com/in/nish-tewari/',
-    },
-    {
         name: 'Vincenzo Milano',
-        title: 'Chief Admin Officer',
+        title: 'Chief Strategy Officer',
         image: Vincenzo,
         linkedin: 'https://www.linkedin.com/in/vincenzo-milano/',
         website: 'https://vincenzomilano.tech',
         bio: 'Hey, I\'m Vincenzo! I\'m passionate about building computers and exploring innovative technology. Currently, I\'m pursuing a double degree in Business and Computer Science, blending technical expertise with strategic thinking.',
+    },
+    {
+        name: 'Nish Tewari',
+        title: 'Chief Admin Officer',
+        image: Nish,
+        linkedin: 'https://www.linkedin.com/in/nish-tewari/',
     },
     {
         name: 'Shakib Ahmed',
