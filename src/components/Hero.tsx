@@ -1,13 +1,69 @@
-import { HeroImage } from '@assets';
+import { useRef, useState, useEffect } from 'react';
 
 const Hero = () => {
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
+    useEffect(() => {
+        const video = videoRef.current;
+        if (video) {
+            const handleLoadedData = () => {
+                setIsVideoLoaded(true);
+                playVideo();
+            };
+
+            const playVideo = async () => {
+                try {
+                    await video.play();
+                } catch (err) {
+                    console.error('Failed to play video:', err);
+                }
+            };
+
+            video.addEventListener('loadeddata', handleLoadedData);
+
+            if (video.readyState >= 3) {
+                handleLoadedData();
+            }
+
+            return () => {
+                video.removeEventListener('loadeddata', handleLoadedData);
+            };
+        }
+    }, []);
+
     return (
-        <section id="hero" className="relative w-full h-screen flex items-center justify-center">
-            <div 
-                className="absolute inset-0 bg-cover bg-center z-0"
-                style={{ backgroundImage: `url(${HeroImage})` }}
-            ></div>
-            
+        <section
+            id="hero"
+            className="relative w-full h-screen flex items-center justify-center overflow-hidden"
+        >
+            <div
+                className={`absolute inset-0 bg-black transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-50' : 'opacity-100'}`}
+            />
+
+            <video
+                ref={videoRef}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-50' : 'opacity-0'}`}
+            >
+                <source
+                    src="https://konfer.juancwu.dev/video.vp9.webm"
+                    type="video/webm; codecs=vp9"
+                />
+                <source
+                    src="https://konfer.juancwu.dev/video.av1.mp4"
+                    type="video/mp4; codecs=av01.0.12M.08"
+                />
+                <source
+                    src="https://konfer.juancwu.dev/video.mp4"
+                    type="video/mp4; codecs=avc1.42E01E"
+                />
+            </video>
+
             <div className="relative z-10 w-full max-w-4xl mx-auto text-center space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 px-4">
                 <h1 className="font-bold leading-tight text-almond font-inter">
                     <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-[128px]">
@@ -50,3 +106,4 @@ const Hero = () => {
 };
 
 export { Hero };
+
