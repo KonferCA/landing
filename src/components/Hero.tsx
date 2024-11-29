@@ -21,7 +21,7 @@ const Hero = () => {
             };
 
             video.addEventListener('loadeddata', handleLoadedData);
-            
+
             if (video.readyState >= 3) {
                 handleLoadedData();
             }
@@ -33,9 +33,14 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="hero" className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-            <div className={`absolute inset-0 bg-black transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-50' : 'opacity-100'}`} />
-            
+        <section
+            id="hero"
+            className="relative w-full h-screen flex items-center justify-center overflow-hidden"
+        >
+            <div
+                className={`absolute inset-0 bg-black transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-50' : 'opacity-100'}`}
+            />
+
             <video
                 ref={videoRef}
                 autoPlay
@@ -45,9 +50,20 @@ const Hero = () => {
                 preload="auto"
                 className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-50' : 'opacity-0'}`}
             >
-                <source src="https://konfer.juancwu.dev/video" type="video/mp4" />
+                <source
+                    src="https://konfer.juancwu.dev/video.vp9.webm"
+                    type="video/webm; codecs=vp9"
+                />
+                <source
+                    src="https://konfer.juancwu.dev/video.av1.mp4"
+                    type="video/mp4; codecs=av01.0.12M.08"
+                />
+                <source
+                    src="https://konfer.juancwu.dev/video.mp4"
+                    type="video/mp4; codecs=avc1.42E01E"
+                />
             </video>
-            
+
             <div className="relative z-10 w-full max-w-4xl mx-auto text-center space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 px-4">
                 <h1 className="font-bold leading-tight text-almond font-inter">
                     <div className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-[128px]">
@@ -90,3 +106,4 @@ const Hero = () => {
 };
 
 export { Hero };
+
