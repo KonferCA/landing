@@ -8,22 +8,21 @@ const Landing = () => {
 
     useEffect(() => {
         setLoading(true);
-
+        
         const loadImages = () => {
-            return new Promise((resolve) => {
+            return new Promise<void>((resolve) => {
                 const images = document.querySelectorAll('img');
                 const imagePromises = Array.from(images).map(img => {
                     if (img.complete) {
                         return Promise.resolve();
                     } else {
-                        return new Promise(resolve => {
-                            img.addEventListener('load', resolve);
-                            img.addEventListener('error', resolve);
+                        return new Promise<void>(resolve => {
+                            img.addEventListener('load', () => resolve());
+                            img.addEventListener('error', () => resolve());
                         });
                     }
                 });
-
-                Promise.all(imagePromises).then(resolve);
+                Promise.all(imagePromises).then(() => resolve());
             });
         };
 
@@ -38,11 +37,11 @@ const Landing = () => {
         Promise.all([
             loadImages(),
             loadFonts(),
-            new Promise(resolve => setTimeout(resolve, 1500)) 
+            new Promise(resolve => setTimeout(resolve, 1000)) 
         ]).then(() => {
             if (contentReady) {
                 setFadeOut(true);
-                setTimeout(() => setLoading(false), 500); 
+                setTimeout(() => setLoading(false), 500);
             }
         });
 
