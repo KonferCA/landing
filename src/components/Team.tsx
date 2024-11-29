@@ -59,7 +59,6 @@ const teamMembers = [
         image: Shakib,
         linkedin: 'https://www.linkedin.com/in/shakib-ahmed/',
         website: 'https://shakibdotme.wordpress.com',
-        bio: "Hey, I'm S(low)hakib!",
     },
     {
         name: 'Amir Agassi',
